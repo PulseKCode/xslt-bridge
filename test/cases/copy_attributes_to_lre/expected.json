@@ -1,0 +1,12 @@
+{
+  "document": {
+    "ok": true,
+    "mime": "application/xml",
+    "output": "<out xmlns:z=\"urn:z\" a=\"1\" b=\"2\" z:c=\"3\"><inner renamed=\"y\"/><s x=\"y\"/></out>"
+  },
+  "fragment": {
+    "ok": true,
+    "mime": "application/xml",
+    "output": "<out xmlns:z=\"urn:z\" a=\"1\" b=\"2\" z:c=\"3\"><inner renamed=\"y\"/><s x=\"y\"/></out>"
+  }
+}

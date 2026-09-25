@@ -1,0 +1,12 @@
+{
+  "document": {
+    "ok": true,
+    "mime": "application/xml",
+    "output": "<div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"x\"><p>ns p</p><br/></div>"
+  },
+  "fragment": {
+    "ok": true,
+    "mime": "text/html",
+    "output": "<div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"x\"><p>ns p</p><br></br></div>"
+  }
+}

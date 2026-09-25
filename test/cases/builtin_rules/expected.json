@@ -1,0 +1,12 @@
+{
+  "document": {
+    "ok": true,
+    "mime": "application/xml",
+    "output": "text1A<B/>Ctail"
+  },
+  "fragment": {
+    "ok": true,
+    "mime": "application/xml",
+    "output": "text1A<B/>Ctail"
+  }
+}

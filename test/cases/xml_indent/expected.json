@@ -1,0 +1,12 @@
+{
+  "document": {
+    "ok": true,
+    "mime": "application/xml",
+    "output": "<result>\n  <summary total=\"4\"/>\n  <item id=\"P-100\">Bracket &amp; Mount</item>\n  <empty/>\n  <nested>\n    <a>\n      <b/>\n    </a>\n  </nested>\n  <item id=\"P-200\">Harness &lt;A&gt;</item>\n  <empty/>\n  <nested>\n    <a>\n      <b/>\n    </a>\n  </nested>\n  <item id=\"P-050\">샤프트 \"축\"</item>\n  <empty/>\n  <nested>\n    <a>\n      <b/>\n    </a>\n  </nested>\n  <item id=\"P-300\">Firmware v2</item>\n  <empty/>\n  <nested>\n    <a>\n      <b/>\n    </a>\n  </nested>\n</result>"
+  },
+  "fragment": {
+    "ok": true,
+    "mime": "application/xml",
+    "output": "<result>\n  <summary total=\"4\"/>\n  <item id=\"P-100\">Bracket &amp; Mount</item>\n  <empty/>\n  <nested>\n    <a>\n      <b/>\n    </a>\n  </nested>\n  <item id=\"P-200\">Harness &lt;A&gt;</item>\n  <empty/>\n  <nested>\n    <a>\n      <b/>\n    </a>\n  </nested>\n  <item id=\"P-050\">샤프트 \"축\"</item>\n  <empty/>\n  <nested>\n    <a>\n      <b/>\n    </a>\n  </nested>\n  <item id=\"P-300\">Firmware v2</item>\n  <empty/>\n  <nested>\n    <a>\n      <b/>\n    </a>\n  </nested>\n</result>"
+  }
+}

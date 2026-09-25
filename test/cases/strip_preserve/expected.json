@@ -1,0 +1,12 @@
+{
+  "document": {
+    "ok": true,
+    "mime": "application/xml",
+    "output": "<o><e n=\"r\" k=\"3\"/><e n=\"a\" k=\"0\"/><e n=\"b\" k=\"1\"/><e n=\"c\" k=\"1\"/><e n=\"p\" k=\"3\"/><e n=\"c\" k=\"1\"/></o>"
+  },
+  "fragment": {
+    "ok": true,
+    "mime": "application/xml",
+    "output": "<o><e n=\"r\" k=\"3\"/><e n=\"a\" k=\"0\"/><e n=\"b\" k=\"1\"/><e n=\"c\" k=\"1\"/><e n=\"p\" k=\"3\"/><e n=\"c\" k=\"1\"/></o>"
+  }
+}

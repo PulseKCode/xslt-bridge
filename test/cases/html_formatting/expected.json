@@ -1,0 +1,12 @@
+{
+  "document": {
+    "ok": true,
+    "mime": "text/html",
+    "output": "<div>\n<ul>\n<li>one</li>\n<li><b>two</b></li>\n</ul>\n<p><span>a</span><div>in p</div></p>\n<table><tr>\n<td>1</td>\n<td>\n<div>x</div>\n<div>y</div>\n</td>\n</tr></table>\n<select><option value=\"1\" selected>A</option>\n<option>B</option></select><form action=\"/x%20y/%C3%A9?a=1&amp;b=2\">\n<input name=\"q\" value=\"é &amp; &quot;\"><button>Go</button>\n</form>\n<a name=\"%EC%95%B5%EC%BB%A4%201\">n</a><custom-el><div>c</div></custom-el><iframe src=\"x.html\"></iframe><P>\n<B>up</B><I>it</I>\n</P>\n<center><font color=\"red\">f</font></center>\n</div>"
+  },
+  "fragment": {
+    "ok": true,
+    "mime": "text/html",
+    "output": "<div>\n<ul>\n<li>one</li>\n<li><b>two</b></li>\n</ul>\n<p><span>a</span><div>in p</div></p>\n<table><tr>\n<td>1</td>\n<td>\n<div>x</div>\n<div>y</div>\n</td>\n</tr></table>\n<select><option value=\"1\" selected>A</option>\n<option>B</option></select><form action=\"/x%20y/%C3%A9?a=1&amp;b=2\">\n<input name=\"q\" value=\"é &amp; &quot;\"><button>Go</button>\n</form>\n<a name=\"%EC%95%B5%EC%BB%A4%201\">n</a><custom-el><div>c</div></custom-el><iframe src=\"x.html\"></iframe><P>\n<B>up</B><I>it</I>\n</P>\n<center><font color=\"red\">f</font></center>\n</div>"
+  }
+}

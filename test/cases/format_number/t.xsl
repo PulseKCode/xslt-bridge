@@ -1,0 +1,6 @@
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:output method="text"/>
+<xsl:decimal-format name="eu" decimal-separator="," grouping-separator="."/>
+<xsl:template match="/">
+<xsl:value-of select="format-number(1234567.891, '#,##0.00')"/>|<xsl:value-of select="format-number(0.5, '0%')"/>|<xsl:value-of select="format-number(-12.3, '#,##0.0;(#,##0.0)')"/>|<xsl:value-of select="format-number(-12.3, '0.00')"/>|<xsl:value-of select="format-number(42, '00000')"/>|<xsl:value-of select="format-number(3.14159, '0.###')"/>|<xsl:value-of select="format-number(1234.5, '#.##0,00', 'eu')"/>|<xsl:value-of select="format-number(0, '#')"/>|<xsl:value-of select="format-number(0.25, '.##')"/>|<xsl:value-of select="format-number(1 div 0, '0')"/>|<xsl:value-of select="format-number(0 div 0, '0')"/>|<xsl:value-of select="format-number(12, '$#0.00 USD')"/>|<xsl:value-of select="format-number(0.123, '#.#‰')"/>|<xsl:value-of select="format-number(1.005, '0.00')"/>|<xsl:value-of select="format-number(2.675, '0.00')"/>|<xsl:value-of select="format-number(1234567, '#,###')"/>|<xsl:value-of select="format-number(5, &quot;'#'0&quot;)"/>
+</xsl:template></xsl:stylesheet>

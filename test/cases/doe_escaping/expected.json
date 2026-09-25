@@ -1,0 +1,12 @@
+{
+  "document": {
+    "ok": true,
+    "mime": "text/html",
+    "output": "<div><b>bold</b>|&lt;b&gt;bold&lt;/b&gt;|&nbsp;<span title=\"a&quot;b'c&lt;&amp;&gt;\">q \"x\" 'y' &amp;amp;</span>\n</div>"
+  },
+  "fragment": {
+    "ok": true,
+    "mime": "text/html",
+    "output": "<div><b>bold</b>|&lt;b&gt;bold&lt;/b&gt;|&nbsp;<span title=\"a&quot;b'c&lt;&amp;&gt;\">q \"x\" 'y' &amp;amp;</span>\n</div>"
+  }
+}

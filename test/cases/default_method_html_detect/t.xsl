@@ -1,0 +1,2 @@
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:template match="/"><HTML><body><xsl:value-of select="count(//part)"/><br/></body></HTML></xsl:template></xsl:stylesheet>

@@ -1,0 +1,12 @@
+{
+  "document": {
+    "ok": true,
+    "mime": "application/xml",
+    "output": "<html xmlns=\"http://www.w3.org/1999/xhtml\" xmlns:a=\"urn:a\"><body><a:x><p>t</p></a:x><div xmlns:c=\"urn:c\" class=\"k\"><c:y/></div><span xmlns=\"\"><i/></span></body></html>"
+  },
+  "fragment": {
+    "ok": true,
+    "mime": "application/xml",
+    "output": "<html xmlns=\"http://www.w3.org/1999/xhtml\" xmlns:a=\"urn:a\"><body><a:x><p>t</p></a:x><div xmlns:c=\"urn:c\" class=\"k\"><c:y/></div><span xmlns=\"\"><i/></span></body></html>"
+  }
+}

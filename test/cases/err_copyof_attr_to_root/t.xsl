@@ -1,0 +1,1 @@
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"><xsl:output method="xml" omit-xml-declaration="yes"/><xsl:template match="/"><xsl:copy-of select="//a/.."/><xsl:copy-of select="/r/@*"/></xsl:template></xsl:stylesheet>

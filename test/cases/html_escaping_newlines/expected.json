@@ -1,0 +1,12 @@
+{
+  "document": {
+    "ok": true,
+    "mime": "text/html",
+    "output": "<div title=\"x\ty\nz\" data-x=\"&lt;&amp;&gt;&quot;\">é 한 &lt;&amp;&gt; \"q\"</div>"
+  },
+  "fragment": {
+    "ok": true,
+    "mime": "text/html",
+    "output": "<div title=\"x\ty\nz\" data-x=\"&lt;&amp;&gt;&quot;\">é 한 &lt;&amp;&gt; \"q\"</div>"
+  }
+}

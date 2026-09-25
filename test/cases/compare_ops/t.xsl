@@ -1,0 +1,5 @@
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:output method="text"/>
+<xsl:template match="/r">
+<xsl:value-of select="a = 5"/>|<xsl:value-of select="a != 5"/>|<xsl:value-of select="a = b"/>|<xsl:value-of select="a &lt; 2"/>|<xsl:value-of select="a &gt; b"/>|<xsl:value-of select="c = 'x'"/>|<xsl:value-of select="nothing = ''"/>|<xsl:value-of select="nothing != ''"/>|<xsl:value-of select="a = true()"/>|<xsl:value-of select="nothing = false()"/>|<xsl:value-of select="'10' &lt; '9'"/>|<xsl:value-of select="e = ''"/>|<xsl:value-of select="2 &lt; 3 = true()"/>|<xsl:value-of select="1 + '2'"/>|<xsl:value-of select="-a[2]"/>|<xsl:value-of select="count(a | b | a)"/>|<xsl:value-of select="a[last()]"/>|<xsl:value-of select="(a | b)[2]"/>|<xsl:value-of select="count(*[position() &gt; 1 and position() &lt; last()])"/>
+</xsl:template></xsl:stylesheet>

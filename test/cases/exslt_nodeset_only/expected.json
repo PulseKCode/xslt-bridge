@@ -1,0 +1,12 @@
+{
+  "document": {
+    "ok": true,
+    "mime": "text/plain",
+    "output": "123|1,abc,1,1|true,false,false,false|exsl|3"
+  },
+  "fragment": {
+    "ok": true,
+    "mime": "text/plain",
+    "output": "123|1,abc,1,1|true,false,false,false|exsl|3"
+  }
+}

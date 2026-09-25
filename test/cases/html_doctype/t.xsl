@@ -1,0 +1,3 @@
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:output method="html" doctype-public="-//W3C//DTD HTML 4.01 Transitional//EN" doctype-system="http://www.w3.org/TR/html4/loose.dtd" encoding="EUC-KR"/>
+<xsl:template match="/"><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/></head><body><p>x</p></body></html></xsl:template></xsl:stylesheet>

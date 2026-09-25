@@ -1,0 +1,12 @@
+{
+  "document": {
+    "ok": true,
+    "mime": "text/html",
+    "output": "<HTML>\n<HEAD>\n<META charset=\"EUC-KR\">\n<TITLE>t</TITLE>\n</HEAD>\n<BODY>x</BODY>\n</HTML>"
+  },
+  "fragment": {
+    "ok": true,
+    "mime": "text/html",
+    "output": "<HTML>\n<HEAD>\n<META charset=\"EUC-KR\">\n<TITLE>t</TITLE>\n</HEAD>\n<BODY>x</BODY>\n</HTML>"
+  }
+}

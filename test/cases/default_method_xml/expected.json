@@ -1,0 +1,12 @@
+{
+  "document": {
+    "ok": true,
+    "mime": "application/xml",
+    "output": "<table><tr><td>P-100</td></tr><tr><td>P-200</td></tr><tr><td>P-050</td></tr><tr><td>P-300</td></tr></table>"
+  },
+  "fragment": {
+    "ok": true,
+    "mime": "text/html",
+    "output": "<table>\n<tr><td>P-100</td></tr>\n<tr><td>P-200</td></tr>\n<tr><td>P-050</td></tr>\n<tr><td>P-300</td></tr>\n</table>"
+  }
+}

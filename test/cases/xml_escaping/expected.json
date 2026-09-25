@@ -1,0 +1,12 @@
+{
+  "document": {
+    "ok": true,
+    "mime": "application/xml",
+    "output": "<o at=\"x&#9;y&#10;z&#13;w\" q=\"&quot;'&lt;&gt;&amp;\">t&#13;u\tv|x\ty\nz&#13;w]]&gt;</o>"
+  },
+  "fragment": {
+    "ok": true,
+    "mime": "application/xml",
+    "output": "<o at=\"x&#9;y&#10;z&#13;w\" q=\"&quot;'&lt;&gt;&amp;\">t&#13;u\tv|x\ty\nz&#13;w]]&gt;</o>"
+  }
+}

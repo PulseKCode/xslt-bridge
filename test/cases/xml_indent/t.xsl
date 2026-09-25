@@ -1,0 +1,3 @@
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:output method="xml" indent="yes" encoding="UTF-8"/>
+<xsl:template match="/"><!-- head comment --><result><summary total="{count(//part)}"/><xsl:for-each select="//part"><item id="{@id}"><xsl:value-of select="name"/></item><empty/><nested><a><b/></a></nested></xsl:for-each><?pi-target some data?></result></xsl:template></xsl:stylesheet>

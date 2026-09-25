@@ -1,0 +1,2 @@
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:template match="/"><table class="t"><xsl:for-each select="rows/r"><tr id="r{@id}"><td><xsl:value-of select="n"/>&#160;</td><td><input type="checkbox" name="chk" value="{@id}" checked="checked"/></td></tr></xsl:for-each></table><div id="cnt"><xsl:value-of select="count(rows/r)"/></div></xsl:template></xsl:stylesheet>

@@ -1,0 +1,12 @@
+{
+  "document": {
+    "ok": true,
+    "mime": "text/plain",
+    "output": "P-100=기계;P-200=전기;P-050=기계;P-300=;|1"
+  },
+  "fragment": {
+    "ok": true,
+    "mime": "text/plain",
+    "output": "P-100=기계;P-200=전기;P-050=기계;P-300=;|1"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "document": {
+    "ok": true,
+    "mime": "text/plain",
+    "output": "kim:2;lee:1;park:1;|2|2|P-100,P-200,P-050,P-300,"
+  },
+  "fragment": {
+    "ok": true,
+    "mime": "text/plain",
+    "output": "kim:2;lee:1;park:1;|2|2|P-100,P-200,P-050,P-300,"
+  }
+}

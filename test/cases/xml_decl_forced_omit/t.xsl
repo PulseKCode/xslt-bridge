@@ -1,0 +1,2 @@
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"><xsl:output method="xml" omit-xml-declaration="no" standalone="yes" encoding="EUC-KR" indent="yes"/>
+<xsl:template match="/"><a><b/></a></xsl:template></xsl:stylesheet>

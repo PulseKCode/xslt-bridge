@@ -1,0 +1,5 @@
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:output method="text"/>
+<xsl:template match="/r">
+<xsl:value-of select="normalize-space(s)"/>|<xsl:value-of select="translate(k, 'abcdef-', 'ABCDEF_')"/>|<xsl:value-of select="substring('12345', 1.5, 2.6)"/>|<xsl:value-of select="substring('12345', 0, 3)"/>|<xsl:value-of select="substring('12345', 0 div 0, 3)"/>|<xsl:value-of select="substring-before('a/b/c','/')"/>|<xsl:value-of select="substring-after('a/b/c','/')"/>|<xsl:value-of select="string-length('한글abc')"/>|<xsl:value-of select="concat('a', 1, true(), 2.50)"/>|<xsl:value-of select="contains(k, 'C-d')"/>|<xsl:value-of select="starts-with(k, 'ABC')"/>|<xsl:value-of select="string(1 = 1)"/>|<xsl:value-of select="boolean('false')"/>|<xsl:value-of select="not(0)"/>|<xsl:value-of select="translate('aaa','a','')"/>|<xsl:value-of select="name(*)"/>|<xsl:value-of select="local-name(/*)"/>|<xsl:value-of select="count(//text())"/>
+</xsl:template></xsl:stylesheet>

@@ -1,0 +1,3 @@
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:output method="text"/>
+<xsl:template match="/"><xsl:for-each select="//title | //para"><xsl:value-of select="name()"/>:<xsl:number level="single" count="section"/>/<xsl:number level="multiple" count="chapter|section" from="book"/>/<xsl:number level="any" count="title" from="chapter"/>/<xsl:number count="para|title"/>;</xsl:for-each></xsl:template></xsl:stylesheet>

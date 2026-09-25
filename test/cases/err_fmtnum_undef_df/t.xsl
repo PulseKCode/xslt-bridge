@@ -1,0 +1,1 @@
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"><xsl:output method="xml" omit-xml-declaration="yes"/><xsl:template match="/"><o><xsl:value-of select="format-number(1,'0','nope')"/></o></xsl:template></xsl:stylesheet>

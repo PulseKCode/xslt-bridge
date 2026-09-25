@@ -1,0 +1,12 @@
+{
+  "document": {
+    "ok": true,
+    "mime": "text/plain",
+    "output": "aBb"
+  },
+  "fragment": {
+    "ok": true,
+    "mime": "text/plain",
+    "output": "aBb"
+  }
+}

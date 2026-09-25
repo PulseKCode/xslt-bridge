@@ -1,0 +1,12 @@
+{
+  "document": {
+    "ok": true,
+    "mime": "application/xml",
+    "output": "<table class=\"t\"><tr id=\"r1\"><td>하나 </td><td><input type=\"checkbox\" name=\"chk\" value=\"1\" checked=\"checked\"/></td></tr><tr id=\"r2\"><td>two &amp; 2 </td><td><input type=\"checkbox\" name=\"chk\" value=\"2\" checked=\"checked\"/></td></tr><tr id=\"r3\"><td> </td><td><input type=\"checkbox\" name=\"chk\" value=\"3\" checked=\"checked\"/></td></tr></table><div id=\"cnt\">3</div>"
+  },
+  "fragment": {
+    "ok": true,
+    "mime": "text/html",
+    "output": "<table class=\"t\">\n<tr id=\"r1\">\n<td>하나 </td>\n<td><input type=\"checkbox\" name=\"chk\" value=\"1\" checked></td>\n</tr>\n<tr id=\"r2\">\n<td>two &amp; 2 </td>\n<td><input type=\"checkbox\" name=\"chk\" value=\"2\" checked></td>\n</tr>\n<tr id=\"r3\">\n<td> </td>\n<td><input type=\"checkbox\" name=\"chk\" value=\"3\" checked></td>\n</tr>\n</table><div id=\"cnt\">3</div>"
+  }
+}

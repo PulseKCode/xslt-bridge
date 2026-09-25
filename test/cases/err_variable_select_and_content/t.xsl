@@ -1,0 +1,1 @@
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"><xsl:output method="xml" omit-xml-declaration="yes"/><xsl:variable name="v" select="1">x</xsl:variable><xsl:template match="/"><o><xsl:value-of select="$v"/></o></xsl:template></xsl:stylesheet>

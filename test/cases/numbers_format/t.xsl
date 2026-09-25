@@ -1,0 +1,5 @@
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:output method="text"/>
+<xsl:template match="/">
+<xsl:value-of select="0.1 + 0.2"/>|<xsl:value-of select="10000000000"/>|<xsl:value-of select="2147483647"/>|<xsl:value-of select="2147483648"/>|<xsl:value-of select="1 div 3"/>|<xsl:value-of select="0.000001"/>|<xsl:value-of select="-0.5"/>|<xsl:value-of select="1 div 0"/>|<xsl:value-of select="-1 div 0"/>|<xsl:value-of select="0 div 0"/>|<xsl:value-of select="sum(//n)"/>|<xsl:value-of select="123456789.123"/>|<xsl:value-of select="1e3"/>|<xsl:value-of select="number('1e3')"/>|<xsl:value-of select="number(' 42 ')"/>|<xsl:value-of select="number('4 2')"/>|<xsl:value-of select="7 mod 3"/>|<xsl:value-of select="-7 mod 3"/>|<xsl:value-of select="round(2.5)"/>|<xsl:value-of select="round(-2.5)"/>|<xsl:value-of select="round(-0.4)"/>|<xsl:value-of select="floor(-1.5)"/>|<xsl:value-of select="ceiling(1.1)"/>|<xsl:value-of select="999999999.9999999"/>|<xsl:value-of select="0.1 * 3"/>|<xsl:value-of select="100 div 7"/>
+</xsl:template></xsl:stylesheet>

@@ -1,0 +1,12 @@
+{
+  "document": {
+    "ok": true,
+    "mime": "application/xml",
+    "output": "<!DOCTYPE doc SYSTEM \"parts.dtd\">\n<doc>\n  <code><![CDATA[a < b ]]]]><![CDATA[> c]]></code>\n  <code/>\n  <other>x</other>\n</doc>"
+  },
+  "fragment": {
+    "ok": true,
+    "mime": "application/xml",
+    "output": "<!DOCTYPE doc SYSTEM \"parts.dtd\">\n<doc>\n  <code><![CDATA[a < b ]]]]><![CDATA[> c]]></code>\n  <code/>\n  <other>x</other>\n</doc>"
+  }
+}

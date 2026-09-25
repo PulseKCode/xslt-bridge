@@ -1,0 +1,1 @@
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:e="urn:e" extension-element-prefixes="e"><xsl:output method="xml" omit-xml-declaration="yes"/><xsl:template match="/"><o><e:x/></o></xsl:template></xsl:stylesheet>

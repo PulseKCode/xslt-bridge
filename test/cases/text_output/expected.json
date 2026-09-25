@@ -1,0 +1,12 @@
+{
+  "document": {
+    "ok": true,
+    "mime": "text/plain",
+    "output": "P-100,Bracket & Mount&\nP-200,Harness <A>&\nP-050,샤프트 \"축\"&\nP-300,Firmware v2&"
+  },
+  "fragment": {
+    "ok": true,
+    "mime": "text/plain",
+    "output": "P-100,Bracket & Mount&\nP-200,Harness <A>&\nP-050,샤프트 \"축\"&\nP-300,Firmware v2&"
+  }
+}

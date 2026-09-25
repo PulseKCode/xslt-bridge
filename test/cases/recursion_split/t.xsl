@@ -1,0 +1,4 @@
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:output method="xml" omit-xml-declaration="yes"/>
+<xsl:template match="/"><l><xsl:call-template name="split"><xsl:with-param name="s" select="string(r)"/></xsl:call-template></l></xsl:template>
+<xsl:template name="split"><xsl:param name="s"/><xsl:choose><xsl:when test="contains($s, ',')"><i><xsl:value-of select="substring-before($s, ',')"/></i><xsl:call-template name="split"><xsl:with-param name="s" select="substring-after($s, ',')"/></xsl:call-template></xsl:when><xsl:otherwise><i><xsl:value-of select="$s"/></i></xsl:otherwise></xsl:choose></xsl:template></xsl:stylesheet>

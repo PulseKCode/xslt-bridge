@@ -1,0 +1,54 @@
+{
+  "name": "xslt-bridge",
+  "version": "1.0.0",
+  "description": "Pure JavaScript drop-in replacement for the browser XSLTProcessor (XSLT 1.0) for when browsers drop XSLT. Works in any modern browser with the same output as Chrome. No WebAssembly.",
+  "main": "dist/xslt-bridge.js",
+  "browser": "dist/xslt-bridge.js",
+  "unpkg": "dist/xslt-bridge.min.js",
+  "jsdelivr": "dist/xslt-bridge.min.js",
+  "files": [
+    "dist/xslt-bridge.js",
+    "dist/xslt-bridge.min.js",
+    "README.ko.md",
+    "THIRD-PARTY-NOTICES.md",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "build": "node scripts/build.js",
+    "test": "node test/run.js && node test/run.js --file dist/xslt-bridge.min.js && node test/api.js && node test/api.js --file dist/xslt-bridge.min.js",
+    "selftest": "node scripts/build-selftest.js",
+    "bench": "node bench/bench.js",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "keywords": [
+    "xslt",
+    "xsltprocessor",
+    "xslt-1.0",
+    "xpath",
+    "polyfill",
+    "chrome",
+    "edge",
+    "firefox",
+    "safari",
+    "libxslt",
+    "legacy"
+  ],
+  "author": "BongJun Park (https://github.com/PulseKCode)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PulseKCode/xslt-bridge.git"
+  },
+  "bugs": {
+    "url": "https://github.com/PulseKCode/xslt-bridge/issues"
+  },
+  "homepage": "https://github.com/PulseKCode/xslt-bridge#readme",
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "acorn": "^8.18.0",
+    "jsdom": "^30.1.1",
+    "terser": "^5.51.2"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "document": {
+    "ok": true,
+    "mime": "application/xml",
+    "output": "<o xmlns:ns_1=\"urn:f\" ns_1:foo=\"1\"/>"
+  },
+  "fragment": {
+    "ok": true,
+    "mime": "application/xml",
+    "output": "<o xmlns:ns_1=\"urn:f\" ns_1:foo=\"1\"/>"
+  }
+}

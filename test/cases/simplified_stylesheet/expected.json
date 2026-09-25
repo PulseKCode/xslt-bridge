@@ -1,0 +1,12 @@
+{
+  "document": {
+    "ok": true,
+    "mime": "text/html",
+    "output": "<html><body>\n<p>1</p>\n<p>2</p>\n</body></html>"
+  },
+  "fragment": {
+    "ok": true,
+    "mime": "text/html",
+    "output": "<html><body>\n<p>1</p>\n<p>2</p>\n</body></html>"
+  }
+}

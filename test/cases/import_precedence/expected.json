@@ -1,0 +1,12 @@
+{
+  "document": {
+    "ok": true,
+    "mime": "application/xml",
+    "output": "<o><A>main<R id=\"1\"/></A><R id=\"2\"/><A>main<R id=\"3\"/></A></o>"
+  },
+  "fragment": {
+    "ok": true,
+    "mime": "text/html",
+    "output": "<o><A>main<R id=\"1\"></R></A><R id=\"2\"></R><A>main<R id=\"3\"></R></A></o>"
+  }
+}

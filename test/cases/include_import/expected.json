@@ -1,0 +1,12 @@
+{
+  "document": {
+    "ok": true,
+    "mime": "application/xml",
+    "output": "<r><main><imp id=\"P-100\"/></main><imp id=\"P-200\"/><main><imp id=\"P-050\"/></main><imp id=\"P-300\"/><inc/></r>"
+  },
+  "fragment": {
+    "ok": true,
+    "mime": "application/xml",
+    "output": "<r><main><imp id=\"P-100\"/></main><imp id=\"P-200\"/><main><imp id=\"P-050\"/></main><imp id=\"P-300\"/><inc/></r>"
+  }
+}

@@ -1,0 +1,3 @@
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:output method="html"/>
+<xsl:template match="/"><div><ul><li>one</li><li><b>two</b></li></ul><p><span>a</span><div>in p</div></p><table><tr><td>1</td><td><div>x</div><div>y</div></td></tr></table><select><option value="1" selected="selected">A</option><option>B</option></select><form action="/x y/é?a=1&amp;b=2"><input name="q" value="é &amp; &quot;"/><button>Go</button></form><a name="앵커 1">n</a><custom-el><div>c</div></custom-el><iframe src="x.html"></iframe><P><B>up</B><I>it</I></P><center><font color="red">f</font></center></div></xsl:template></xsl:stylesheet>

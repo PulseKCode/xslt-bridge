@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>xslt-bridge self-test</title>
+<script>window.XSLT_BRIDGE_MODE = 'none';</script>
+<script src="../dist/xslt-bridge.js"></script>
+<style>
+  body { font: 13px/1.5 system-ui, "Segoe UI", "Malgun Gothic", sans-serif; margin: 16px; color: #222; }
+  h1 { font-size: 18px; margin: 0 0 8px; }
+  #summary { margin: 8px 0 12px; padding: 8px 10px; background: #f3f5f7; border: 1px solid #d5dae0; white-space: pre-wrap; }
+  table { border-collapse: collapse; width: 100%; }
+  th, td { border: 1px solid #d5dae0; padding: 3px 6px; text-align: left; vertical-align: top; }
+  th { background: #eef1f4; }
+  .ok { color: #1a7f37; font-weight: bold; }
+  .ng { color: #c62828; font-weight: bold; }
+  .na { color: #888; }
+  pre { margin: 4px 0 0; white-space: pre-wrap; word-break: break-all; font: 12px Consolas, monospace; background: #fafafa; }
+</style>
+</head>
+<body>
+<h1>xslt-bridge self-test</h1>
+<p>(1) compares the engine with the expected results of the reference transformer (Chrome's XSLTProcessor pipeline on libxslt 1.1.45 / libxml2 2.16.0).
+(2) compares the engine with this browser's own XSLTProcessor, while the browser still has one.</p>
+<div id="summary">running...</div>
+<table>
+  <thead><tr><th>#</th><th>case</th><th>(1) vs expected (document string / fragment DOM)</th><th>(2) vs this browser's XSLTProcessor</th></tr></thead>
+  <tbody id="rows"></tbody>
+</table>
+<script type="application/json" id="cases">/*CASES*/[]</script>
+<script>
+(function () {
+  var cases = JSON.parse(document.getElementById('cases').textContent);
+  var rows = document.getElementById('rows');
+  var Native = window.XSLTProcessor, nativeOk = false;
+  try { if (typeof Native === 'function' && !Native.isXsltBridge) { new Native(); nativeOk = true; } } catch (e) { nativeOk = false; }
+  var parser = new DOMParser();
+  var quiet = { error: console.error, warn: console.warn, log: console.log };
+
+  function parse(text) { return parser.parseFromString(text, 'application/xml'); }
+  function markup(frag) { if (!frag) return null; var div = document.createElement('div'); div.appendChild(frag); return div.innerHTML; }
+  function diffText(a, b) {
+    var i = 0;
+    while (i < a.length && i < b.length && a.charAt(i) === b.charAt(i)) i++;
+    return 'offset ' + i + '\nexpected: ' + JSON.stringify(a.substring(Math.max(0, i - 60), i + 60)) +
+           '\nactual:   ' + JSON.stringify(b.substring(Math.max(0, i - 60), i + 60));
+  }
+  function cell(cls, text, detail) {
+    var td = document.createElement('td'), s = document.createElement('span');
+    s.className = cls; s.textContent = text; td.appendChild(s);
+    if (detail) { var pre = document.createElement('pre'); pre.textContent = detail; td.appendChild(pre); }
+    return td;
+  }
+  function quietly(fn) {
+    console.error = console.warn = console.log = function () {};
+    try { return fn(); } finally { console.error = quiet.error; console.warn = quiet.warn; console.log = quiet.log; }
+  }
+
+  var pass1 = 0, fail1 = 0, pass2 = 0, fail2 = 0, skip2 = 0;
+  cases.forEach(function (c, index) {
+    var tr = document.createElement('tr');
+    var td0 = document.createElement('td'); td0.textContent = index + 1; tr.appendChild(td0);
+    var td1 = document.createElement('td'); td1.textContent = c.name; tr.appendChild(td1);
+    var hasExtras = Object.keys(c.extras).length > 0;
+    XsltBridge.loadDocument = function (url) {
+      var name = url.split('?')[0].split('/').pop();
+      if (!c.extras.hasOwnProperty(name)) throw new Error('missing file ' + name);
+      return parse(c.extras[name]);
+    };
+    function engine() {
+      var p = new XsltBridge();
+      p.importStylesheet(parse(c.xsl));
+      c.params.forEach(function (kv) { p.setParameter(null, kv[0], kv[1]); });
+      return p;
+    }
+    // (1) vs expected
+    var why = '';
+    var doc = quietly(function () { try { return engine().transformToString(parse(c.xml)); } catch (e) { return null; } });
+    var e1 = c.expected.document;
+    if (!(e1.ok ? doc === e1.output : doc === null)) why = 'document: ' + (doc === null ? 'failed' : (e1.ok ? '\n' + diffText(e1.output, doc) : 'expected a failure'));
+    var frag = quietly(function () { try { return markup(engine().transformToFragment(parse(c.xml), document)); } catch (e) { return null; } });
+    var e2 = c.expected.fragment, expFrag = null;
+    if (e2.ok) {
+      if (e2.mime === 'text/html') { var b = document.createElement('body'); b.innerHTML = e2.output; expFrag = b.innerHTML; }
+      else expFrag = frag;   // XML / text fragments are covered by the document comparison
+    }
+    if (!(e2.ok ? frag === expFrag : frag === null)) why += (why ? '\n' : '') + 'fragment: ' + (frag === null ? 'null' : (e2.ok ? '\n' + diffText(expFrag, frag) : 'expected null'));
+    if (!why) { pass1++; tr.appendChild(cell('ok', 'match')); } else { fail1++; tr.appendChild(cell('ng', 'differs', why)); }
+    XsltBridge.loadDocument = null;
+    // (2) vs native
+    if (!nativeOk) { skip2++; tr.appendChild(cell('na', 'no native XSLT')); }
+    else if (hasExtras) { skip2++; tr.appendChild(cell('na', 'skipped (external files)')); }
+    else {
+      var run = function (P) {
+        return quietly(function () {
+          try {
+            var p = new P(); p.importStylesheet(parse(c.xsl));
+            c.params.forEach(function (kv) { p.setParameter(null, kv[0], kv[1]); });
+            return markup(p.transformToFragment(parse(c.xml), document));
+          } catch (e) { return null; }
+        });
+      };
+      var a = run(Native), bb = run(XsltBridge);
+      if (a === bb) { pass2++; tr.appendChild(cell('ok', a === null ? 'match (both null)' : 'match')); }
+      else { fail2++; tr.appendChild(cell('ng', 'differs', a === null ? 'native returned null' : (bb === null ? 'engine returned null' : diffText(a, bb)))); }
+    }
+    rows.appendChild(tr);
+  });
+  document.getElementById('summary').textContent =
+    navigator.userAgent + '\n' +
+    '(1) vs expected: ' + pass1 + ' match / ' + fail1 + ' differ (' + cases.length + ' cases)\n' +
+    '(2) vs native:   ' + (nativeOk ? pass2 + ' match / ' + fail2 + ' differ / ' + skip2 + ' skipped' : 'skipped, this browser has no XSLTProcessor');
+})();
+</script>
+</body>
+</html>

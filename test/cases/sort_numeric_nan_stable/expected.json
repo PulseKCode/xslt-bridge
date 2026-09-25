@@ -1,0 +1,12 @@
+{
+  "document": {
+    "ok": true,
+    "mime": "text/plain",
+    "output": "befcad|adcfbe|efcdab|fedcba"
+  },
+  "fragment": {
+    "ok": true,
+    "mime": "text/plain",
+    "output": "befcad|adcfbe|efcdab|fedcba"
+  }
+}

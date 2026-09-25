@@ -1,0 +1,12 @@
+{
+  "document": {
+    "ok": true,
+    "mime": "text/plain",
+    "output": "one|1|data here| note |1|0|7|[Ptarget][C note ]"
+  },
+  "fragment": {
+    "ok": true,
+    "mime": "text/plain",
+    "output": "one|1|data here| note |1|0|7|[Ptarget][C note ]"
+  }
+}

@@ -1,0 +1,4 @@
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:d="urn:ds" xmlns:q="urn:q" exclude-result-prefixes="d q">
+<xsl:output method="xml" omit-xml-declaration="yes"/>
+<xsl:template match="/"><r><xsl:for-each select="d:doc/d:item"><i k="{@q:k}"><xsl:value-of select="."/></i></xsl:for-each><n><xsl:value-of select="count(//*[local-name()='item'])"/>,<xsl:value-of select="namespace-uri(/*)"/>,<xsl:value-of select="name(//q:other)"/>,<xsl:value-of select="count(//item)"/>,<xsl:value-of select="count(/d:doc/q:*)"/></n><xsl:apply-templates select="//q:other"/></r></xsl:template>
+<xsl:template match="q:*"><Q><xsl:copy-of select="."/></Q></xsl:template></xsl:stylesheet>

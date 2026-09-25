@@ -1,0 +1,12 @@
+{
+  "document": {
+    "ok": true,
+    "mime": "text/plain",
+    "output": "1234|3|14|3|2.5|3||3"
+  },
+  "fragment": {
+    "ok": true,
+    "mime": "text/plain",
+    "output": "1234|3|14|3|2.5|3||3"
+  }
+}

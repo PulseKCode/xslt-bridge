@@ -1,0 +1,1 @@
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"><xsl:output method="xml" omit-xml-declaration="yes"/><xsl:variable name="g" select="'base'"/><xsl:template match="/"><o><xsl:apply-templates select="//r"/></o></xsl:template><xsl:template match="r"><R id="{@id}"/></xsl:template></xsl:stylesheet>

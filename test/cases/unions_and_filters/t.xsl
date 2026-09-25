@@ -1,0 +1,3 @@
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:output method="text"/>
+<xsl:template match="/r"><xsl:for-each select="b | a | c/a"><xsl:value-of select="@n"/></xsl:for-each>|<xsl:value-of select="(a|b)[last()]/@n"/>|<xsl:for-each select="//a[position() mod 2 = 1]"><xsl:value-of select="@n"/></xsl:for-each>|<xsl:value-of select="count(//a[not(@n = preceding::a/@n)])"/>|<xsl:value-of select="sum(//@n) div count(//@n)"/>|<xsl:value-of select="//a[@n &gt; 1][1]/@n"/>|<xsl:value-of select="string(//a[99]/@n)"/>|<xsl:value-of select="count(*[self::a or self::b])"/></xsl:template></xsl:stylesheet>

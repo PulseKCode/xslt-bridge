@@ -1,0 +1,12 @@
+{
+  "document": {
+    "ok": true,
+    "mime": "text/plain",
+    "output": "[][ a][_x][-1][½][10][2][3.5][a b][a-b][A1][a1][ab][Apple][apple][äpple][eclair][ÉCLAIR][Éclair][full][ｆｕｌｌ][x-y][xy][Zebra][zebra][가][가나][나][カタカナ][漢字]\nD:[漢字][カタカナ][나][가나][가][zebra][Zebra][xy][x-y][ｆｕｌｌ][full][Éclair][ÉCLAIR][eclair][äpple][apple][Apple][ab][a1][A1][a-b][a b][3.5][2][10][½][-1][_x][ a][]\nL:[][ a][_x][-1][½][10][2][3.5][a b][a-b][a1][A1][ab][apple][Apple][äpple][eclair][Éclair][ÉCLAIR][full][ｆｕｌｌ][x-y][xy][zebra][Zebra][가][가나][나][カタカナ][漢字]\nK:[][ a][_x][-1][½][10][2][3.5][가][가나][나][漢字][a b][a-b][A1][a1][ab][Apple][apple][äpple][eclair][ÉCLAIR][Éclair][full][ｆｕｌｌ][x-y][xy][Zebra][zebra][カタカナ]\nU:[][ a][_x][-1][½][10][2][3.5][a b][a-b][A1][a1][ab][Apple][apple][äpple][eclair][ÉCLAIR][Éclair][full][ｆｕｌｌ][x-y][xy][Zebra][zebra][가][가나][나][カタカナ][漢字]"
+  },
+  "fragment": {
+    "ok": true,
+    "mime": "text/plain",
+    "output": "[][ a][_x][-1][½][10][2][3.5][a b][a-b][A1][a1][ab][Apple][apple][äpple][eclair][ÉCLAIR][Éclair][full][ｆｕｌｌ][x-y][xy][Zebra][zebra][가][가나][나][カタカナ][漢字]\nD:[漢字][カタカナ][나][가나][가][zebra][Zebra][xy][x-y][ｆｕｌｌ][full][Éclair][ÉCLAIR][eclair][äpple][apple][Apple][ab][a1][A1][a-b][a b][3.5][2][10][½][-1][_x][ a][]\nL:[][ a][_x][-1][½][10][2][3.5][a b][a-b][a1][A1][ab][apple][Apple][äpple][eclair][Éclair][ÉCLAIR][full][ｆｕｌｌ][x-y][xy][zebra][Zebra][가][가나][나][カタカナ][漢字]\nK:[][ a][_x][-1][½][10][2][3.5][가][가나][나][漢字][a b][a-b][A1][a1][ab][Apple][apple][äpple][eclair][ÉCLAIR][Éclair][full][ｆｕｌｌ][x-y][xy][Zebra][zebra][カタカナ]\nU:[][ a][_x][-1][½][10][2][3.5][a b][a-b][A1][a1][ab][Apple][apple][äpple][eclair][ÉCLAIR][Éclair][full][ｆｕｌｌ][x-y][xy][Zebra][zebra][가][가나][나][カタカナ][漢字]"
+  }
+}

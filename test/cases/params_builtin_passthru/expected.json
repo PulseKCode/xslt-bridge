@@ -1,0 +1,12 @@
+{
+  "document": {
+    "ok": true,
+    "mime": "text/plain",
+    "output": "passed"
+  },
+  "fragment": {
+    "ok": true,
+    "mime": "text/plain",
+    "output": "passed"
+  }
+}

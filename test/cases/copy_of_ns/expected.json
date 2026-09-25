@@ -1,0 +1,12 @@
+{
+  "document": {
+    "ok": true,
+    "mime": "application/xml",
+    "output": "<out><x:item xmlns=\"urn:default\" xmlns:x=\"urn:x\" a=\"1\" x:b=\"2\"><child>text</child><!--c--></x:item><plain xmlns=\"urn:default\" xmlns:x=\"urn:x\"/><root xmlns=\"urn:default\" xmlns:x=\"urn:x\"><x:item a=\"1\" x:b=\"2\"><child>text</child><!--c--></x:item><plain/></root></out>"
+  },
+  "fragment": {
+    "ok": true,
+    "mime": "application/xml",
+    "output": "<out><x:item xmlns=\"urn:default\" xmlns:x=\"urn:x\" a=\"1\" x:b=\"2\"><child>text</child><!--c--></x:item><plain xmlns=\"urn:default\" xmlns:x=\"urn:x\"/><root xmlns=\"urn:default\" xmlns:x=\"urn:x\"><x:item a=\"1\" x:b=\"2\"><child>text</child><!--c--></x:item><plain/></root></out>"
+  }
+}

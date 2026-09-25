@@ -1,0 +1,2 @@
+mode	compact
+user	홍길동 & co

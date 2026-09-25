@@ -1,0 +1,7 @@
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:output method="text"/>
+<xsl:template match="/">
+<xsl:for-each select="//c[@id='4']">
+<xsl:for-each select="ancestor::*"><xsl:value-of select="concat(name(),@id)"/>,</xsl:for-each>|<xsl:for-each select="ancestor-or-self::*[1]"><xsl:value-of select="@id"/></xsl:for-each>|<xsl:for-each select="preceding::*"><xsl:value-of select="@id"/>,</xsl:for-each>|<xsl:for-each select="following::*"><xsl:value-of select="@id"/>,</xsl:for-each>|<xsl:value-of select="preceding::*[1]/@id"/>|<xsl:value-of select="ancestor::*[2]/@id"/>|<xsl:value-of select="following-sibling::*[1]/@id"/>|<xsl:value-of select="count(preceding-sibling::*)"/>|<xsl:value-of select="../../following-sibling::a/@id"/>
+</xsl:for-each>|<xsl:value-of select="count(//b/..)"/>|<xsl:value-of select="count(//@id)"/>|<xsl:for-each select="//c[1]"><xsl:value-of select="@id"/>,</xsl:for-each>|<xsl:for-each select="(//c)[1]"><xsl:value-of select="@id"/>,</xsl:for-each>|<xsl:for-each select="//*[@id &gt; 5]/@id"><xsl:value-of select="."/>,</xsl:for-each>|<xsl:value-of select="count(/descendant::*)"/>|<xsl:value-of select="count(//a[b/c])"/>
+</xsl:template></xsl:stylesheet>

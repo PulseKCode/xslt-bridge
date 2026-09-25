@@ -1,0 +1,12 @@
+{
+  "document": {
+    "ok": true,
+    "mime": "application/xml",
+    "output": "<r><i k=\"1\">A</i><i k=\"\">B</i><n>2,urn:ds,q:other,0,1</n><Q><q:other xmlns=\"urn:ds\" xmlns:q=\"urn:q\">C</q:other></Q></r>"
+  },
+  "fragment": {
+    "ok": true,
+    "mime": "application/xml",
+    "output": "<r><i k=\"1\">A</i><i k=\"\">B</i><n>2,urn:ds,q:other,0,1</n><Q><q:other xmlns=\"urn:ds\" xmlns:q=\"urn:q\">C</q:other></Q></r>"
+  }
+}

@@ -1,0 +1,3 @@
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"><xsl:output method="text"/>
+<xsl:template match="/"><xsl:for-each select="r/i"><xsl:sort select="@g"/><xsl:sort select="@n" data-type="number" order="descending"/><xsl:value-of select="."/></xsl:for-each>|<xsl:for-each select="r/i"><xsl:sort select="@n"/><xsl:value-of select="."/></xsl:for-each>|<xsl:apply-templates select="r/i"><xsl:sort select="@g" order="descending"/><xsl:sort select="."/></xsl:apply-templates></xsl:template>
+<xsl:template match="i"><xsl:value-of select="concat(position(), .)"/></xsl:template></xsl:stylesheet>

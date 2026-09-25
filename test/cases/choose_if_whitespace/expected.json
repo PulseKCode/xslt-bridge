@@ -1,0 +1,12 @@
+{
+  "document": {
+    "ok": true,
+    "mime": "application/xml",
+    "output": "<out n=\"3\"><yes/>bignone  keep  <sp xml:space=\"preserve\">  x  </sp><w len=\"2\"/></out>"
+  },
+  "fragment": {
+    "ok": true,
+    "mime": "application/xml",
+    "output": "<out n=\"3\"><yes/>bignone  keep  <sp xml:space=\"preserve\">  x  </sp><w len=\"2\"/></out>"
+  }
+}

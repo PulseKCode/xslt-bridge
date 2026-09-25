@@ -1,0 +1,1 @@
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"><xsl:output method="xml" omit-xml-declaration="yes"/><xsl:template match="/"><o><xsl:call-template name="t"><xsl:with-param name="zz" select="1"/></xsl:call-template></o></xsl:template><xsl:template name="t">T</xsl:template></xsl:stylesheet>

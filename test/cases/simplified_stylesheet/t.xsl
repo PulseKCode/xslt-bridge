@@ -1,0 +1,1 @@
+<html xsl:version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"><body><xsl:for-each select="parts/part"><p><xsl:value-of select="@id"/></p></xsl:for-each></body></html>

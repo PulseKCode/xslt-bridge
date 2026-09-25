@@ -1,0 +1,12 @@
+{
+  "document": {
+    "ok": true,
+    "mime": "application/xml",
+    "output": "<r><a><i t=\"Electrical\" q=\"3\"/><i t=\"Mechanical\" q=\"100\"/><i t=\"Mechanical\" q=\"12\"/><i t=\"Software\" q=\"1\"/></a><b><i p=\"NaN\"/><i p=\"0.07\"/><i p=\"89.99\"/><i p=\"1250.5\"/></b><c><i n=\"Bracket &amp; Mount\"/><i n=\"Firmware v2\"/><i n=\"Harness &lt;A&gt;\"/><i n=\"샤프트 &quot;축&quot;\"/></c><d><p pos=\"1\" id=\"P-300\"/><p pos=\"2\" id=\"P-200\"/><p pos=\"3\" id=\"P-100\"/><p pos=\"4\" id=\"P-050\"/></d></r>"
+  },
+  "fragment": {
+    "ok": true,
+    "mime": "application/xml",
+    "output": "<r><a><i t=\"Electrical\" q=\"3\"/><i t=\"Mechanical\" q=\"100\"/><i t=\"Mechanical\" q=\"12\"/><i t=\"Software\" q=\"1\"/></a><b><i p=\"NaN\"/><i p=\"0.07\"/><i p=\"89.99\"/><i p=\"1250.5\"/></b><c><i n=\"Bracket &amp; Mount\"/><i n=\"Firmware v2\"/><i n=\"Harness &lt;A&gt;\"/><i n=\"샤프트 &quot;축&quot;\"/></c><d><p pos=\"1\" id=\"P-300\"/><p pos=\"2\" id=\"P-200\"/><p pos=\"3\" id=\"P-100\"/><p pos=\"4\" id=\"P-050\"/></d></r>"
+  }
+}

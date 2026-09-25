@@ -1,0 +1,3 @@
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:output method="html" indent="yes"/>
+<xsl:template match="/"><div><br>text-in-br</br><A HREF=" x y.jsp?q=가" NAME="n m">A</A><table><!-- c --><tr><td>1</td></tr></table><?php echo 1 ?><p>a<br/>b</p><ul><li>1</li></ul><span>s</span><div/><textarea></textarea><title>t &amp; t</title><noscript><b>x</b></noscript><xmp>&lt;raw&gt;</xmp></div></xsl:template></xsl:stylesheet>

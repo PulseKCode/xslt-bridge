@@ -1,0 +1,4 @@
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:exsl="http://exslt.org/common" extension-element-prefixes="exsl">
+<xsl:output method="text"/>
+<xsl:variable name="tmp"><item v="3"/><item v="1"/><item v="2"/></xsl:variable>
+<xsl:template match="/"><xsl:for-each select="exsl:node-set($tmp)/item"><xsl:sort select="@v"/><xsl:value-of select="@v"/></xsl:for-each>|<xsl:value-of select="exsl:object-type($tmp)"/>|<xsl:value-of select="exsl:object-type(1)"/>|<xsl:value-of select="function-available('exsl:node-set')"/>|<xsl:value-of select="function-available('foo')"/>|<xsl:value-of select="element-available('xsl:if')"/>|<xsl:value-of select="system-property('xsl:version')"/>|<xsl:value-of select="system-property('xsl:vendor')"/></xsl:template></xsl:stylesheet>

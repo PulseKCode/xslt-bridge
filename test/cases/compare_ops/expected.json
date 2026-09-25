@@ -1,0 +1,12 @@
+{
+  "document": {
+    "ok": true,
+    "mime": "text/plain",
+    "output": "true|true|true|true|false|true|false|false|true|true|false|true|true|3|-5|3|5|5|3"
+  },
+  "fragment": {
+    "ok": true,
+    "mime": "text/plain",
+    "output": "true|true|true|true|false|true|false|false|true|true|false|true|true|3|-5|3|5|5|3"
+  }
+}

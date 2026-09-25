@@ -1,0 +1,12 @@
+{
+  "document": {
+    "ok": true,
+    "mime": "text/html",
+    "output": "<div id=\"freeze\"><table><tbody><tr><td>1/4</td><td>Bracket &amp; Mount</td></tr><tr><td>2/4</td><td>Harness &lt;A&gt;</td></tr><tr><td>3/4</td><td>샤프트 \"축\"</td></tr><tr><td>4/4</td><td>Firmware v2</td></tr></tbody></table></div>"
+  },
+  "fragment": {
+    "ok": true,
+    "mime": "text/html",
+    "output": "<div id=\"freeze\"><table><tbody><tr><td>1/4</td><td>Bracket &amp; Mount</td></tr><tr><td>2/4</td><td>Harness &lt;A&gt;</td></tr><tr><td>3/4</td><td>샤프트 \"축\"</td></tr><tr><td>4/4</td><td>Firmware v2</td></tr></tbody></table></div>"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "document": {
+    "ok": true,
+    "mime": "text/html",
+    "output": "<HTML><body>4<br>\n</body></HTML>"
+  },
+  "fragment": {
+    "ok": true,
+    "mime": "text/html",
+    "output": "<HTML><body>4<br>\n</body></HTML>"
+  }
+}

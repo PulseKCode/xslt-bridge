@@ -1,0 +1,12 @@
+{
+  "document": {
+    "ok": true,
+    "mime": "text/html",
+    "output": "<!DOCTYPE html>\n<html>\n<head><meta charset=\"UTF-8\"></head>\n<body><section><p>x</p></section></body>\n</html>"
+  },
+  "fragment": {
+    "ok": true,
+    "mime": "text/html",
+    "output": "<!DOCTYPE html>\n<html>\n<head><meta charset=\"UTF-8\"></head>\n<body><section><p>x</p></section></body>\n</html>"
+  }
+}

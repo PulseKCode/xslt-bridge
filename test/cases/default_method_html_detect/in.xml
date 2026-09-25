@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<parts>
+  <part id="P-100" type="Mechanical" state="RELEASED">
+    <name>Bracket &amp; Mount</name><qty>12</qty><price>1250.5</price><owner>kim</owner>
+  </part>
+  <part id="P-200" type="Electrical" state="IN_WORK">
+    <name>Harness &lt;A&gt;</name><qty>3</qty><price>89.99</price><owner>lee</owner>
+  </part>
+  <part id="P-050" type="Mechanical" state="FROZEN">
+    <name>샤프트 "축"</name><qty>100</qty><price>0.07</price><owner>park</owner>
+  </part>
+  <part id="P-300" type="Software" state="RELEASED">
+    <name>Firmware v2</name><qty>1</qty><price>NaN</price><owner>kim</owner>
+  </part>
+</parts>

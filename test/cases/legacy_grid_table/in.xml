@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gridRoot>
+  <setting name="sortColumnName">Name</setting>
+  <setting name="sortDirection">descending</setting>
+  <columns>
+    <column name="Name" label="이름" width="120" sortType="string"/>
+    <column name="Rev" label="Rev" width="40"/>
+    <column name="Qty" label="수량" sortType="integer"/>
+    <column name="Desc" label="설명" html="true"/>
+  </columns>
+  <rows>
+    <r id="0,0" o="1.2.3.4" level="0" expand="true"><c a="Part-1">Part-1</c><c>A</c><c>10</c><c>&lt;img src="images/icon-part.gif"/&gt; 부품</c></r>
+    <r id="0,1" o="1.2.3.5" level="1"><c a="Part-2">Part-2 &amp; X</c><c>B</c><c>2</c><c>it's "quoted"</c></r>
+    <r id="0,1,0" o="1.2.3.6" level="2"><c a="O'Brien">O'Brien</c><c>C</c><c>300</c><c/></r>
+    <r id="0,2" o="1.2.3.7" level="1" disabled="true"><c a="z">zeta</c><c>-</c><c>0</c><c>마지막</c></r>
+  </rows>
+</gridRoot>

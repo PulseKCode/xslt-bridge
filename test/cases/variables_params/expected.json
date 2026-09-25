@@ -1,0 +1,12 @@
+{
+  "document": {
+    "ok": true,
+    "mime": "application/xml",
+    "output": "<r mode=\"compact\" user=\"홍길동 &amp; co\" total=\"116\" g2=\"232\" rtf=\"onetwo\"><row>L1</row><row>default</row><f>3628800</f><v>abc-compact</v><x a=\"1\">one</x><x a=\"2\">two</x><p>P-100</p></r>"
+  },
+  "fragment": {
+    "ok": true,
+    "mime": "application/xml",
+    "output": "<r mode=\"compact\" user=\"홍길동 &amp; co\" total=\"116\" g2=\"232\" rtf=\"onetwo\"><row>L1</row><row>default</row><f>3628800</f><v>abc-compact</v><x a=\"1\">one</x><x a=\"2\">two</x><p>P-100</p></r>"
+  }
+}

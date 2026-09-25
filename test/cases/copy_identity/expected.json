@@ -1,0 +1,12 @@
+{
+  "document": {
+    "ok": true,
+    "mime": "application/xml",
+    "output": "<doc xmlns:m=\"urn:m\"><m:a k=\"v\">x<B>y</B></m:a><c/><?pi data?><!--cm--></doc>"
+  },
+  "fragment": {
+    "ok": true,
+    "mime": "application/xml",
+    "output": "<doc xmlns:m=\"urn:m\"><m:a k=\"v\">x<B>y</B></m:a><c/><?pi data?><!--cm--></doc>"
+  }
+}

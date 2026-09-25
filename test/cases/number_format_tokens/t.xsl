@@ -1,0 +1,3 @@
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:output method="text"/>
+<xsl:template match="/"><xsl:number value="5" format="1. "/>|<xsl:number value="5" format="[01]"/>|<xsl:number value="5" format="Ⅰ"/>|<xsl:number value="12" format="١"/>|<xsl:number value="3" format="x"/>|<xsl:number value="3" format=""/>|<xsl:number value="3" format="#1#"/></xsl:template></xsl:stylesheet>

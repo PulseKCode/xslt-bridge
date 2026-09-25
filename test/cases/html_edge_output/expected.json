@@ -1,0 +1,12 @@
+{
+  "document": {
+    "ok": true,
+    "mime": "text/html",
+    "output": "<div>\n<br><A HREF=\" x%20y.jsp?q=%EA%B0%80\" NAME=\"n%20m\">A</A><table><tr><td>1</td></tr></table>\n<p>a<br>b</p>\n<ul><li>1</li></ul>\n<span>s</span><div></div>\n<textarea></textarea><title>t &amp; t</title>\n<noscript><b>x</b></noscript>\n<xmp><raw></xmp>\n</div>"
+  },
+  "fragment": {
+    "ok": true,
+    "mime": "text/html",
+    "output": "<div>\n<br><A HREF=\" x%20y.jsp?q=%EA%B0%80\" NAME=\"n%20m\">A</A><table><tr><td>1</td></tr></table>\n<p>a<br>b</p>\n<ul><li>1</li></ul>\n<span>s</span><div></div>\n<textarea></textarea><title>t &amp; t</title>\n<noscript><b>x</b></noscript>\n<xmp><raw></xmp>\n</div>"
+  }
+}

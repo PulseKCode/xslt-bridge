@@ -1,0 +1,12 @@
+{
+  "document": {
+    "ok": true,
+    "mime": "text/plain",
+    "output": "Hello World|ABC_DEF|234|12||a|b/c|5|a1true2.5|true|true|true|true|true||s|r|2"
+  },
+  "fragment": {
+    "ok": true,
+    "mime": "text/plain",
+    "output": "Hello World|ABC_DEF|234|12||a|b/c|5|a1true2.5|true|true|true|true|true||s|r|2"
+  }
+}

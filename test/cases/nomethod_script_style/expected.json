@@ -1,0 +1,12 @@
+{
+  "document": {
+    "ok": true,
+    "mime": "application/xml",
+    "output": "<div><script>var a = 1 &lt; 2 &amp;&amp; \"x\";</script><style>.a &gt; .b {}</style><a href=\"javascript:f('하나')\">L</a></div>"
+  },
+  "fragment": {
+    "ok": true,
+    "mime": "text/html",
+    "output": "<div>\n<script>var a = 1 < 2 && \"x\";</script><style>.a > .b {}</style>\n<a href=\"javascript:f('%ED%95%98%EB%82%98')\">L</a>\n</div>"
+  }
+}

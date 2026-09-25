@@ -1,0 +1,12 @@
+{
+  "document": {
+    "ok": true,
+    "mime": "text/plain",
+    "output": "[s:1/1.1/1][s:2/1.2/2][p:1.b.i|1][p:1.b.ii|2][s:1/2.1/3][p:2.a.i|1]1,234,567|AB|ab|MCMXCIX|iv|007|3|0|(3)|0"
+  },
+  "fragment": {
+    "ok": true,
+    "mime": "text/plain",
+    "output": "[s:1/1.1/1][s:2/1.2/2][p:1.b.i|1][p:1.b.ii|2][s:1/2.1/3][p:2.a.i|1]1,234,567|AB|ab|MCMXCIX|iv|007|3|0|(3)|0"
+  }
+}

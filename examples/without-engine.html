@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Example 1 - without xslt-bridge</title>
+<style>
+  body { font: 13px/1.6 system-ui, "Segoe UI", sans-serif; margin: 16px; color: #222; }
+  h1 { font-size: 17px; margin: 0 0 4px; }
+  .sub { color: #666; margin-bottom: 12px; }
+  #status { padding: 8px 10px; border: 1px solid #d5dae0; background: #f3f5f7; margin-bottom: 12px; white-space: pre-wrap; }
+  #status.ok { border-color: #a5d6a7; background: #edf7ee; }
+  #status.ng { border-color: #ef9a9a; background: #fdecea; }
+  table.list { border-collapse: collapse; }
+  table.list th, table.list td { border: 1px solid #c8cdd3; padding: 3px 8px; }
+  table.list th { background: #eef1f4; }
+  tr.even td { background: #fafbfc; }
+  pre { background: #fafafa; border: 1px solid #e3e6ea; padding: 8px; overflow-x: auto; font: 12px Consolas, monospace; }
+</style>
+</head>
+<body>
+<h1>Example 1 - without the engine (legacy code as is)</h1>
+<div class="sub">Uses the browser's built-in <code>XSLTProcessor</code>. This page stops working in browsers that have removed XSLT.</div>
+<div id="status">running...</div>
+<div id="out"></div>
+<h2 style="font-size:14px">Code executed by this page</h2>
+<pre id="code"></pre>
+<script type="text/plain" id="src-xml">
+<parts>
+  <part id="P-100" type="Mechanical" state="RELEASED"><name>Bracket &amp; Mount</name><rev>A.2</rev><qty>12</qty><price>1250.5</price></part>
+  <part id="P-200" type="Electrical" state="IN_WORK"><name>harness &lt;A&gt;</name><rev>B</rev><qty>3</qty><price>89.99</price></part>
+  <part id="P-050" type="Mechanical" state="FROZEN"><name>Shaft</name><rev>A</rev><qty>100</qty><price>0.07</price></part>
+  <part id="P-300" type="Software" state="RELEASED"><name>Firmware v2</name><rev>C.1</rev><qty>1</qty><price>24000</price></part>
+</parts>
+</script>
+
+<script type="text/plain" id="src-xsl">
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+  <xsl:param name="sortBy" select="'name'"/>
+  <xsl:template match="/parts">
+    <table class="list">
+      <tr><th>ID</th><th>Name</th><th>Rev</th><th>Qty</th><th>Amount</th></tr>
+      <xsl:for-each select="part">
+        <xsl:sort select="*[name() = $sortBy]"/>
+        <tr>
+          <xsl:attribute name="class"><xsl:choose><xsl:when test="position() mod 2 = 0">even</xsl:when><xsl:otherwise>odd</xsl:otherwise></xsl:choose></xsl:attribute>
+          <td><a href="javascript:void(0)" onclick="alert('{@id}')"><xsl:value-of select="@id"/></a></td>
+          <td><xsl:value-of select="name"/><xsl:if test="@state='FROZEN'">&#160;(frozen)</xsl:if></td>
+          <td><xsl:value-of select="rev"/></td>
+          <td align="right"><xsl:value-of select="qty"/></td>
+          <td align="right"><xsl:value-of select="format-number(price * qty, '#,##0.00')"/></td>
+        </tr>
+      </xsl:for-each>
+      <tr><td colspan="4">Total</td><td align="right"><xsl:value-of select="format-number(sum(part/price), '#,##0.00')"/></td></tr>
+    </table>
+  </xsl:template>
+</xsl:stylesheet>
+</script>
+
+<script>
+// ---- The code below is typical legacy code that uses XSLTProcessor. It is identical in both examples. ----
+function runTransform() {
+  var xmlText = document.getElementById('src-xml').textContent;
+  var xslText = document.getElementById('src-xsl').textContent;
+  var parser = new DOMParser();
+  var xmlDoc = parser.parseFromString(xmlText, 'application/xml');
+  var xslDoc = parser.parseFromString(xslText, 'application/xml');
+
+  var processor = new XSLTProcessor();
+  processor.importStylesheet(xslDoc);
+  processor.setParameter(null, 'sortBy', 'name');
+  var fragment = processor.transformToFragment(xmlDoc, document);
+  if (!fragment) throw new Error('transformToFragment returned null');
+  document.getElementById('out').appendChild(fragment);
+}
+// ---- end ----
+
+(function () {
+  var status = document.getElementById('status');
+  document.getElementById('code').textContent = runTransform.toString();
+  try {
+    var t0 = new Date().getTime();
+    runTransform();
+    var kind = (typeof XSLTProcessor === 'function' && XSLTProcessor.isXsltBridge) ? 'xslt-bridge' : "the browser's built-in XSLT";
+    status.className = 'ok';
+    status.textContent = 'Transformed with ' + kind + ' in ' + (new Date().getTime() - t0) + ' ms.\n' +
+      'Because the built-in XSLT is used, Chrome logs an "XSLT is deprecated" warning in the console. That is expected here.\n' +
+      'To preview a browser without XSLT, set chrome://flags/#xslt to Disabled and reload.';
+  } catch (e) {
+    status.className = 'ng';
+    status.textContent = 'Transformation failed: ' + (e && e.message ? e.message : e) + '\n' +
+      'This browser has no XSLT. Open with-engine.html - the same code plus one script tag.';
+  }
+})();
+</script>
+</body>
+</html>

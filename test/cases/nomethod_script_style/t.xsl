@@ -1,0 +1,2 @@
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:template match="/"><div><script>var a = 1 &lt; 2 &amp;&amp; "x";</script><style>.a &gt; .b {}</style><a href="javascript:f('{rows/r[1]/n}')">L</a></div></xsl:template></xsl:stylesheet>

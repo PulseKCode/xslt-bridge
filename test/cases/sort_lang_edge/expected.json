@@ -1,0 +1,12 @@
+{
+  "document": {
+    "ok": true,
+    "mime": "text/plain",
+    "output": ",10,9,A,a,B,b,가,|b,B,a,A,가,,9,10,|가,b,B,a,A,9,10,,"
+  },
+  "fragment": {
+    "ok": true,
+    "mime": "text/plain",
+    "output": ",10,9,A,a,B,b,가,|b,B,a,A,가,,9,10,|가,b,B,a,A,9,10,,"
+  }
+}

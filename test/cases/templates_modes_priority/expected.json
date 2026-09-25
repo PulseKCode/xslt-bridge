@@ -1,0 +1,12 @@
+{
+  "document": {
+    "ok": true,
+    "mime": "application/xml",
+    "output": "<out>\n  <released id=\"P-100\"/>\n  <generic id=\"P-200\"/>\n  <mech id=\"P-050\"/>\n  <released id=\"P-300\"/>\n  <s>P-100</s>\n  <s>P-200</s>\n  <s>P-050</s>\n  <s>P-300</s>\n  <big>\n    <t>12</t>\n  </big>\n  <t>3</t>\n  <big>\n    <t>100</t>\n  </big>\n  <t>1</t>\n</out>"
+  },
+  "fragment": {
+    "ok": true,
+    "mime": "application/xml",
+    "output": "<out>\n  <released id=\"P-100\"/>\n  <generic id=\"P-200\"/>\n  <mech id=\"P-050\"/>\n  <released id=\"P-300\"/>\n  <s>P-100</s>\n  <s>P-200</s>\n  <s>P-050</s>\n  <s>P-300</s>\n  <big>\n    <t>12</t>\n  </big>\n  <t>3</t>\n  <big>\n    <t>100</t>\n  </big>\n  <t>1</t>\n</out>"
+  }
+}

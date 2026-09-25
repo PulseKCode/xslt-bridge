@@ -1,0 +1,12 @@
+{
+  "document": {
+    "ok": true,
+    "mime": "text/plain",
+    "output": "[A1][other2][A3]|212|1r;2r;3r;"
+  },
+  "fragment": {
+    "ok": true,
+    "mime": "text/plain",
+    "output": "[A1][other2][A3]|212|1r;2r;3r;"
+  }
+}

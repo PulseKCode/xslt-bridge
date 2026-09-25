@@ -1,0 +1,12 @@
+{
+  "document": {
+    "ok": true,
+    "mime": "text/plain",
+    "output": "[item2][x-any][any]|[path][node][node]"
+  },
+  "fragment": {
+    "ok": true,
+    "mime": "text/plain",
+    "output": "[item2][x-any][any]|[path][node][node]"
+  }
+}
